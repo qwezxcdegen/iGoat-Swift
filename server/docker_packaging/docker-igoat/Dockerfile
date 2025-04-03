@@ -14,4 +14,6 @@ WORKDIR /usr/src/app
 
 EXPOSE 8080
 
+RUN gem install sinatra webrick rack
+
 CMD ["/bin/bash", "/startup.sh"]
