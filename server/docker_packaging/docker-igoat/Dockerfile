@@ -1,10 +1,10 @@
-FROM ruby:2.3
+FROM ruby:3
 
 RUN mkdir -p /usr/src/app
 
 ENV RACK_ENV production
 
-RUN git clone https://github.com/OWASP/igoat.git /tmp/
+RUN git clone https://github.com/qwezxcdegen/igoat.git /tmp/
 
 RUN mv /tmp/server/* /usr/src/app/
 
