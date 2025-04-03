@@ -4,7 +4,7 @@ RUN mkdir -p /usr/src/app
 
 ENV RACK_ENV production
 
-RUN git clone https://github.com/qwezxcdegen/igoat.git /tmp/
+RUN git clone https://github.com/qwezxcdegen/iGoat-Swift.git /tmp/
 
 RUN mv /tmp/server/* /usr/src/app/
 
