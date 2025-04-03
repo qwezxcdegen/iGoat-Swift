@@ -18,6 +18,6 @@ EXPOSE 8080
 
 RUN gem install sinatra webrick rack
 
-RUN gem install bundler && bundle install
+RUN gem install bundler && bundle install --jobs 4 --retry 3
 
 CMD ["/bin/bash", "/startup.sh"]
