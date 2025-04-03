@@ -8,7 +8,7 @@ RUN git clone https://github.com/qwezxcdegen/iGoat-Swift.git /tmp/
 
 RUN mv /tmp/server/* /usr/src/app/
 
-COPY Gemfile Gemfile.lock /usr/src/app/
+COPY Gemfile /usr/src/app/
 
 ADD startup.sh /
 
