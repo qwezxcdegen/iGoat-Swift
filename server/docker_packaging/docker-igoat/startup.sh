@@ -1,3 +1,3 @@
  #!/bin/bash
-gem install sinatra
+gem install sinatra rack webrick
 ruby $MAIN_APP_FILE 
