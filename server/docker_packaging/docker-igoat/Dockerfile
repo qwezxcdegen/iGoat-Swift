@@ -1,4 +1,4 @@
-FROM ruby:3.1
+FROM ruby:2.4
 
 RUN mkdir -p /usr/src/app
 
@@ -16,8 +16,8 @@ WORKDIR /usr/src/app
 
 EXPOSE 8080
 
-RUN gem install sinatra webrick rack
+RUN gem install bundler -v 1.16.1
 
-RUN gem install bundler && bundle install --jobs 4 --retry 3
+RUN bundle install
 
 CMD ["/bin/bash", "/startup.sh"]
