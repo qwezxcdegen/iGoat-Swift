@@ -56,6 +56,8 @@
 require 'rubygems'
 require 'sinatra/base'
 require 'webrick'
+require 'rack'
+Rack::Handler.register 'webrick', 'Rack::Handler::WEBrick'
 require 'webrick/https'
 require 'openssl'
 require 'json'
